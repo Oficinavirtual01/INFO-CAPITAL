@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
     <html>
     <head>
       <title>Análisis Estadístico Delictual de JPD CAPITAL</title>
@@ -66,16 +66,12 @@
         function drawChartDelitos() {
           var data = google.visualization.arrayToDataTable([
             ['Categoría', 'Semana 1', 'Semana 2'],
-            ['Hurto EGT', 3, 0],
-['Robo c/Arma Blanca', 2, 0],
-['Robo EGT', 2, 0],
-['Robo Agrav. EGT', 2, 0],
-['Robo', 30, 15],
-['Hurto', 10, 6],
-['Robo Agrav.', 4, 3],
-['Hurto Agrav.', 10, 8],
-['Robo en Banda', 1, 1],
-['Robo c/Arma Fuego', 4, 7]
+            ['Otro - cuatri/mono patín', 1, 0],
+['Bicicleta', 4, 2],
+['Ninguno', 29, 17],
+['Auto/camioneta', 5, 3],
+['Moto', 9, 6],
+['Moto, Bicicleta, Otro - cuatri/mono patín', 0, 1]
           ]);
           var options = {
             title: 'Análisis estadístico de los Delitos',
@@ -92,13 +88,13 @@
         function drawChartDias() {
           var data = google.visualization.arrayToDataTable([
             ['Categoría', 'Semana 1', 'Semana 2'],
-            ['Domingo', 10, 3],
-['Viernes', 12, 4],
-['Martes', 13, 6],
+            ['Domingo', 7, 2],
+['Viernes', 9, 4],
 ['Jueves', 6, 3],
-['Sábado', 6, 4],
-['Miércoles', 12, 11],
-['Lunes', 9, 9]
+['Sábado', 2, 1],
+['Martes', 9, 5],
+['Lunes', 7, 6],
+['Miércoles', 8, 8]
           ]);
           var options = {
             title: 'Análisis por Día de la Semana',
@@ -114,10 +110,10 @@
         function drawChartHorario() {
           var data = google.visualization.arrayToDataTable([
             ['Categoría', 'Semana 1', 'Semana 2'],
-            ['☀️ Tarde (12:00 - 17:59)', 21, 6],
-['🌤️ Mañana (06:00 - 11:59)', 15, 9],
-['🌙 Madrugada (00:00 - 05:59)', 11, 7],
-['🌆 Noche (18:00 - 23:59)', 21, 18]
+            ['☀️ Tarde (12:00 - 17:59)', 16, 3],
+['🌤️ Mañana (06:00 - 11:59)', 13, 6],
+['🌙 Madrugada (00:00 - 05:59)', 8, 7],
+['🌆 Noche (18:00 - 23:59)', 11, 13]
           ]);
           var options = {
             title: 'Análisis por Rango Horario',
@@ -137,7 +133,6 @@
             ['Categoría', 'Semana 1', 'Semana 2'],
             ['Cria__5', 18, 6],
 ['Cria__4', 16, 8],
-['EPOA 1', 20, 11],
 ['Cria_33', 7, 6],
 ['Cria_59', 4, 4],
 ['Cria__6', 3, 5]
@@ -159,9 +154,9 @@
             ['Categoría', 'Semana 1', 'Semana 2'],
             ['Entidad Bancaria', 1, 0],
 ['Interior taxi, Remis', 1, 0],
-['Comercio', 10, 3],
-['Vía Pública', 39, 25],
-['Domicilio', 17, 12]
+['Comercio', 5, 1],
+['Vía Pública', 27, 18],
+['Domicilio', 14, 10]
           ]);
           var options = {
             title: 'Análisis por Tipo de Lugar',
@@ -186,8 +181,8 @@
     <div class="summary-grid">
       <div class="summary-box">
         <div class="summary-title">Total Delitos</div>
-        <div class="summary-value">Semana 1: 68 | Semana 2: 40</div>
-        <div class="variation variation-down">▼ 41% (-28)</div>
+        <div class="summary-value">Semana 1: 48 | Semana 2: 29</div>
+        <div class="variation variation-down">▼ 40% (-19)</div>
       </div>
   
     <div class="summary-box">
@@ -215,60 +210,40 @@
         </thead>
         <tbody>
           <tr>
-              <td>Hurto EGT</td>
+              <td>Otro - cuatri/mono patín</td>
+              <td>1</td>
+              <td>0</td>
+              <td class="frio">▼ 100% (-1)</td>
+            </tr><tr>
+              <td>Bicicleta</td>
+              <td>4</td>
+              <td>2</td>
+              <td class="frio">▼ 50% (-2)</td>
+            </tr><tr>
+              <td>Ninguno</td>
+              <td>29</td>
+              <td>17</td>
+              <td class="frio">▼ 41% (-12)</td>
+            </tr><tr>
+              <td>Auto/camioneta</td>
+              <td>5</td>
               <td>3</td>
-              <td>0</td>
-              <td class="frio">▼ 100% (-3)</td>
+              <td class="frio">▼ 40% (-2)</td>
             </tr><tr>
-              <td>Robo c/Arma Blanca</td>
-              <td>2</td>
-              <td>0</td>
-              <td class="frio">▼ 100% (-2)</td>
-            </tr><tr>
-              <td>Robo EGT</td>
-              <td>2</td>
-              <td>0</td>
-              <td class="frio">▼ 100% (-2)</td>
-            </tr><tr>
-              <td>Robo Agrav. EGT</td>
-              <td>2</td>
-              <td>0</td>
-              <td class="frio">▼ 100% (-2)</td>
-            </tr><tr>
-              <td>Robo</td>
-              <td>30</td>
-              <td>15</td>
-              <td class="frio">▼ 50% (-15)</td>
-            </tr><tr>
-              <td>Hurto</td>
-              <td>10</td>
+              <td>Moto</td>
+              <td>9</td>
               <td>6</td>
-              <td class="frio">▼ 40% (-4)</td>
+              <td class="frio">▼ 33% (-3)</td>
             </tr><tr>
-              <td>Robo Agrav.</td>
-              <td>4</td>
-              <td>3</td>
-              <td class="frio">▼ 25% (-1)</td>
-            </tr><tr>
-              <td>Hurto Agrav.</td>
-              <td>10</td>
-              <td>8</td>
-              <td class="neutro">▼ 20% (-2)</td>
-            </tr><tr>
-              <td>Robo en Banda</td>
+              <td>Moto, Bicicleta, Otro - cuatri/mono patín</td>
+              <td>0</td>
               <td>1</td>
-              <td>1</td>
-              <td class="neutro">· 0% (0)</td>
-            </tr><tr>
-              <td>Robo c/Arma Fuego</td>
-              <td>4</td>
-              <td>7</td>
-              <td class="caliente">▲ 75% (+3)</td>
+              <td class="caliente">▲ ∞ (+1)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de delitos muestra una tendencia ▼ 41%. El mayor aumento de hechos se registró en <strong>Robo c/Arma Fuego (▲ 75% (+3))</strong>. Mientras que la mayor disminución fue en <strong>Hurto EGT (▼ 100% (-3))</strong>.</div>
+    <div class="conclusion">El análisis de delitos muestra una tendencia ▼ 40%. El mayor aumento de hechos se registró en <strong>Moto, Bicicleta, Otro - cuatri/mono patín (▲ ∞ (+1))</strong>. Mientras que la mayor disminución fue en <strong>Otro - cuatri/mono patín (▼ 100% (-1))</strong>.</div>
   
         
     <div class="header">📅 ANÁLISIS POR DÍA DE LA SEMANA</div>
@@ -286,19 +261,14 @@
         <tbody>
           <tr>
               <td>Domingo</td>
-              <td>10</td>
-              <td>3</td>
-              <td class="frio">▼ 70% (-7)</td>
+              <td>7</td>
+              <td>2</td>
+              <td class="frio">▼ 71% (-5)</td>
             </tr><tr>
               <td>Viernes</td>
-              <td>12</td>
+              <td>9</td>
               <td>4</td>
-              <td class="frio">▼ 67% (-8)</td>
-            </tr><tr>
-              <td>Martes</td>
-              <td>13</td>
-              <td>6</td>
-              <td class="frio">▼ 54% (-7)</td>
+              <td class="frio">▼ 56% (-5)</td>
             </tr><tr>
               <td>Jueves</td>
               <td>6</td>
@@ -306,24 +276,29 @@
               <td class="frio">▼ 50% (-3)</td>
             </tr><tr>
               <td>Sábado</td>
-              <td>6</td>
-              <td>4</td>
-              <td class="frio">▼ 33% (-2)</td>
+              <td>2</td>
+              <td>1</td>
+              <td class="frio">▼ 50% (-1)</td>
             </tr><tr>
-              <td>Miércoles</td>
-              <td>12</td>
-              <td>11</td>
-              <td class="neutro">▼ 8% (-1)</td>
+              <td>Martes</td>
+              <td>9</td>
+              <td>5</td>
+              <td class="frio">▼ 44% (-4)</td>
             </tr><tr>
               <td>Lunes</td>
-              <td>9</td>
-              <td>9</td>
+              <td>7</td>
+              <td>6</td>
+              <td class="neutro">▼ 14% (-1)</td>
+            </tr><tr>
+              <td>Miércoles</td>
+              <td>8</td>
+              <td>8</td>
               <td class="neutro">· 0% (0)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de días de la semana muestra una tendencia ▼ 41%. Mientras que la mayor disminución fue en <strong>Domingo (▼ 70% (-7))</strong>.</div>
+    <div class="conclusion">El análisis de días de la semana muestra una tendencia ▼ 40%. Mientras que la mayor disminución fue en <strong>Domingo (▼ 71% (-5))</strong>.</div>
   
         
     <div class="header">🕒 ANÁLISIS POR RANGO HORARIO</div>
@@ -341,29 +316,29 @@
         <tbody>
           <tr>
               <td>☀️ Tarde (12:00 - 17:59)</td>
-              <td>21</td>
-              <td>6</td>
-              <td class="frio">▼ 71% (-15)</td>
+              <td>16</td>
+              <td>3</td>
+              <td class="frio">▼ 81% (-13)</td>
             </tr><tr>
               <td>🌤️ Mañana (06:00 - 11:59)</td>
-              <td>15</td>
-              <td>9</td>
-              <td class="frio">▼ 40% (-6)</td>
+              <td>13</td>
+              <td>6</td>
+              <td class="frio">▼ 54% (-7)</td>
             </tr><tr>
               <td>🌙 Madrugada (00:00 - 05:59)</td>
-              <td>11</td>
+              <td>8</td>
               <td>7</td>
-              <td class="frio">▼ 36% (-4)</td>
+              <td class="neutro">▼ 13% (-1)</td>
             </tr><tr>
               <td>🌆 Noche (18:00 - 23:59)</td>
-              <td>21</td>
-              <td>18</td>
-              <td class="neutro">▼ 14% (-3)</td>
+              <td>11</td>
+              <td>13</td>
+              <td class="caliente">▲ 18% (+2)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de rangos horarios muestra una tendencia ▼ 41%. Mientras que la mayor disminución fue en <strong>☀️ Tarde (12:00 - 17:59) (▼ 71% (-15))</strong>.</div>
+    <div class="conclusion">El análisis de rangos horarios muestra una tendencia ▼ 40%. El mayor aumento de hechos se registró en <strong>🌆 Noche (18:00 - 23:59) (▲ 18% (+2))</strong>. Mientras que la mayor disminución fue en <strong>☀️ Tarde (12:00 - 17:59) (▼ 81% (-13))</strong>.</div>
   
         
     <div class="header">📍 ANÁLISIS POR DEPENDENCIA</div>
@@ -390,11 +365,6 @@
               <td>8</td>
               <td class="frio">▼ 50% (-8)</td>
             </tr><tr>
-              <td>EPOA 1</td>
-              <td>20</td>
-              <td>11</td>
-              <td class="frio">▼ 45% (-9)</td>
-            </tr><tr>
               <td>Cria_33</td>
               <td>7</td>
               <td>6</td>
@@ -413,7 +383,7 @@
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de dependencias muestra una tendencia ▼ 41%. El mayor aumento de hechos se registró en <strong>Cria__6 (▲ 67% (+2))</strong>. Mientras que la mayor disminución fue en <strong>Cria__5 (▼ 67% (-12))</strong>.</div>
+    <div class="conclusion">El análisis de dependencias muestra una tendencia ▼ 40%. El mayor aumento de hechos se registró en <strong>Cria__6 (▲ 67% (+2))</strong>. Mientras que la mayor disminución fue en <strong>Cria__5 (▼ 67% (-12))</strong>.</div>
   
         
     <div class="header">🏠 ANÁLISIS POR TIPO DE LUGAR</div>
@@ -441,29 +411,29 @@
               <td class="frio">▼ 100% (-1)</td>
             </tr><tr>
               <td>Comercio</td>
-              <td>10</td>
-              <td>3</td>
-              <td class="frio">▼ 70% (-7)</td>
+              <td>5</td>
+              <td>1</td>
+              <td class="frio">▼ 80% (-4)</td>
             </tr><tr>
               <td>Vía Pública</td>
-              <td>39</td>
-              <td>25</td>
-              <td class="frio">▼ 36% (-14)</td>
+              <td>27</td>
+              <td>18</td>
+              <td class="frio">▼ 33% (-9)</td>
             </tr><tr>
               <td>Domicilio</td>
-              <td>17</td>
-              <td>12</td>
-              <td class="frio">▼ 29% (-5)</td>
+              <td>14</td>
+              <td>10</td>
+              <td class="frio">▼ 29% (-4)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de tipos de lugar muestra una tendencia ▼ 41%. Mientras que la mayor disminución fue en <strong>Entidad Bancaria (▼ 100% (-1))</strong>.</div>
+    <div class="conclusion">El análisis de tipos de lugar muestra una tendencia ▼ 40%. Mientras que la mayor disminución fue en <strong>Entidad Bancaria (▼ 100% (-1))</strong>.</div>
   
 
         <hr style="border: 1px solid #eee;">
         <div class="conclusion">
-          <p><strong>🏁 CONCLUSIÓN GENERAL:</strong> En conclusión, el período muestra un **disminución (▼ 41% (-28))** en la totalidad de hechos delictivos. Se recomienda prestar especial atención a las tendencias identificadas en los análisis detallados.</p>
+          <p><strong>🏁 CONCLUSIÓN GENERAL:</strong> En conclusión, el período muestra un **disminución (▼ 40% (-19))** en la totalidad de hechos delictivos. Se recomienda prestar especial atención a las tendencias identificadas en los análisis detallados.</p>
         </div>
 
         <div class="footer">
@@ -474,4 +444,3 @@
       </div>
     </body>
     </html>
-  
